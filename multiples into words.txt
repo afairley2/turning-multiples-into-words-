@@ -1,0 +1,34 @@
+
+#include <stdio.h>
+
+//This program takes multiples of 3 and returns "Mage". Multiples of 5 and returns "Control". Also Multiples
+//of 3 and 5 returns "MageControl" in the console window.
+
+int main (void)
+{
+        int x,y;
+        for (x=1; x<=100; x++) //To count to 100
+        {
+               if (x%3==0 && x%5==0) //Logic for multiples of 3 and 5
+        {
+         printf("MageControl\n");
+}
+
+else if (x%3==0) //Logic for multiples of 3
+{
+    printf("Mage\n");
+}
+
+else if (x%5==0) //Logic for multiples of 5
+{
+    printf("Control\n");
+}
+
+else
+{
+    printf("%d\n",x); //If the number is not divisible by 3 or 5, Just Print the number
+}
+
+        }
+return 0;
+}
